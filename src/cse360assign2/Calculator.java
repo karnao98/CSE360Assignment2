@@ -63,6 +63,6 @@ public class Calculator {
 	
 	// Return history, which is a String of each operation performed
 	public String getHistory () {
-		return (history);
+		return history;
 	}
 }
