@@ -48,14 +48,17 @@ public class Calculator {
 	}
 	
 	// Divide current total by value
+	// If value is zero, set total to 0
 	// Concatenate operation to history
 	public void divide (int value) {
 		if (value != 0) {
 			total /= value;
 			history += " / " + value;
 		}
-		else
+		else {
 			total = 0;
+			history += " / " + value;
+		}
 	}
 	
 	// Return history, which is a String of each operation performed
